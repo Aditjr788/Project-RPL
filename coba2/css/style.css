@@ -1,0 +1,309 @@
+/* --- Navbar --- */
+.navbar {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+  
+  .navbar-brand {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  .navbar-brand svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .full-page {
+    height: calc(100vh - 56px); /* 56px kira-kira tinggi navbar */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+
+/* --- Custom Button --- */
+.custom-btn {
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    display: inline-block;
+    min-width: 250px;
+    max-width: 100%;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+    text-align: center;
+  }
+  
+  .custom-btn:hover {
+    background-color: #343a40;
+    transform: scale(1.03);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+
+
+/* custom contact button */
+.custom2-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 8px;
+    display: inline-block;
+    min-width: 150px;
+    max-width: 300px;
+    width: auto;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+    text-align: center;
+  }
+
+  .custom2-btn:hover {
+    background-color: #343a40;
+    transform: scale(1.03);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+
+
+/* --- Kalender --- */
+.calendar {
+  border: 2px solid black;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 90%;
+  max-width: 500px;
+  background-color: white;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid black;
+  padding: 10px;
+}
+
+.calendar-header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.nav-arrow {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.calendar-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.calendar-table th, .calendar-table td {
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.calendar-table td.text-muted {
+  color: grey;
+}
+
+/* --- Info Box --- */
+.info-box {
+    border: 1px solid #ccc; /* Garis tepi tipis */
+    border-radius: 8px; /* Radius sudut */
+    padding: 20px; /* Padding internal */
+    margin: 20px 0; /*biar tengah*/
+    background-color: #fff; /* Warna latar belakang putih */
+  }
+  
+  .info-box h2 {
+    font-size: 1.5rem; /* Ukuran font judul */
+    margin-top: 0; /* Menghilangkan margin atas */
+    margin-bottom: 10px; /* Memberi ruang antara judul dan daftar */
+    color: #333; /* Warna teks hitam */
+  }
+  
+  .info-box ul {
+    list-style-type: disc; /* Tanda bullet */
+    padding-left: 20px; /* Indentasi daftar */
+  }
+  
+  .info-box li {
+    margin-bottom: 10px; /* Spasi antar item daftar */
+    font-size: 1rem; /* Ukuran font isi */
+    color: #555; /* Warna teks abu-abu tua */
+  }
+
+
+/* --- Contact Form (Tambahkan Bagian Ini) --- */
+.contact-form {
+    border: 1px solid #ccc; /* Garis tepi tipis */
+    border-radius: 8px; /* Radius sudut */
+    padding: 20px; /* Padding internal */
+    margin: 20px 0; /* Margin atas dan bawah */
+    background-color: #fff; /* Warna latar belakang putih */
+}
+
+.contact-form p {
+    font-size: 1.2rem; /* Ukuran font teks penjelas */
+    margin-bottom: 20px; /* Spasi antara teks dan form */
+    color: #333; /* Warna teks hitam */
+}
+
+.contact-form .form-label {
+    font-weight: bold; /* Teks label tebal */
+    color: #555; /* Warna teks abu-abu tua */
+}
+
+.contact-form .form-control {
+    border: 1px solid #ccc; /* Garis tepi tipis */
+    border-radius: 4px; /* Radius sudut */
+    padding: 10px; /* Padding internal */
+    font-size: 1rem; /* Ukuran font */
+}
+
+.contact-form textarea.form-control {
+    resize: vertical; /* Memungkinkan pengguna memperbesar textarea secara vertikal */
+}
+
+/* --- Kalender --- */
+.calendar-table a {
+  text-decoration: none;  /* Menghilangkan garis bawah */
+  color: black;           /* Mengatur warna teks menjadi hitam */
+}
+
+.calendar-table a:hover {
+  color: #333;  /* Mengubah warna saat hover, bisa disesuaikan */
+}
+
+/* Menyesuaikan tanggal yang berada di dalam tabel */
+.calendar-table td {
+  text-align: center;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.calendar-table td a {
+  font-weight: bold;  /* Menebalkan teks tanggal */
+}
+
+/* Jika tanggal tidak aktif (seperti hari kosong di awal atau akhir bulan) */
+.calendar-table td.text-muted {
+  color:#555  /* Menetapkan warna abu-abu untuk tanggal kosong */
+}
+
+.calendar-header a.nav-arrow,
+.calendar-header a.nav-arrow:visited {
+  color: black !important;
+  text-decoration: none !important;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0 10px;
+}
+
+/* Set background color of the form container */
+.container {
+  background-color: white; /* Keeping the background behind the form white */
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Style for the form itself (input fields) */
+form {
+  background-color: black; /* Black background for the form */
+  padding: 20px;
+  border-radius: 8px; /* Round corners */
+}
+
+/* Change the text color to white inside the form */
+form label, form .form-control {
+  color: white; /* Label text color */
+}
+
+form .form-control {
+  background-color: #fff; /* Dark background for inputs */
+  border-color: #555; /* Dark border for inputs */
+  color: black !important; /* Text color inside inputs */
+}
+
+/* Custom button style */
+.custom-btn {
+  background-color: #fff; /* Dark background for the button */
+  color: #333; /* black text on the button */
+  border-color: #555; /* Dark border */
+}
+
+.custom-btn:hover {
+  background-color: #fff; /* Slightly lighter on hover */
+}
+
+/* Error message color */
+.alert-danger {
+  background-color: #f44336;
+  color: white;
+}
+
+/* Success message color */
+.alert-success {
+  background-color: #4caf50;
+  color: white;
+}
+
+/* Styling the links (for sign-up and login links) */
+a {
+  color: #333; /* Make the links black */
+}
+
+a:hover {
+  color: #333; /* Slightly lighter color on hover */
+}
+
+.account-card {
+  max-width: 350px;
+  margin: 30px auto;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  border-radius: 15px;
+}
+
+.account-card .card-body {
+  padding: 30px;
+}
+
+.account-icon {
+  width: 60px;
+  height: 60px;
+  background-color: #f0f0f0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+.logout-btn {
+  margin-top: 20px;
+}
+
+.navbar .nav-link {
+  color: black !important;
+}
+
+.navbar .nav-link:hover {
+  color: #555 !important;
+}
+
+/* Mengubah warna ikon toggler menjadi hitam */
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='black' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  background-color: #333;
+}
+
+.navbar .container {
+  background-color: #fff !important;
+  padding: 0 !important;
+  border-radius: 5px !important;
+}
